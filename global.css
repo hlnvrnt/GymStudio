@@ -28,13 +28,13 @@
 }
 
 body {
-    
+
     min-height: 100vh;
     position: relative;
     background-color: var(--main-color);
     color: var(--paragraph-color);
     font-size: var(--paragraph-size);
-    display:flex;
+    display: flex;
     flex-direction: column;
 }
 
@@ -196,7 +196,7 @@ header {
 #iconsports>div:hover {
     --_p: 100%;
     /* --_s: .3s; */
-    transform: scale(1.2);            
+    transform: scale(1.2);
 }
 
 
