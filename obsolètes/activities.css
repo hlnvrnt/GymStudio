@@ -1,0 +1,307 @@
+:root {
+    /* les variables de ce css ont été lié au variable de global ==> pour modifier, merci d'utiliser global.css */
+    --primary_color: var(--main-color);
+    --secondary_color: var(--secondary-color);
+    --font_color: var(--paragraph-color);
+    --padding_between_blocks: 25px;
+}
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: var(--primary_color);
+    color: var(--font_color);
+    overflow-x: hidden;
+    height: 100vh;
+
+}
+
+
+.sports_buttons>div {
+    --b: 0.3em;
+    /* the thickness of the line */
+    --c: #f0f2f4;
+    /* the color */
+
+    color: #0000;
+    padding-block: var(--b);
+    background:
+        linear-gradient(var(--c) 50%, #000 0) 0% calc(100% - var(--_p, 0%))/100% 200%,
+        linear-gradient(var(--c) 0 0) 0% var(--_p, 0%)/var(--_p, 0%) var(--b) no-repeat;
+    -webkit-background-clip: text, padding-box;
+    background-clip: text, padding-box;
+    transition: .3s var(--_s, 0s) linear, background-size .3s calc(.3s - var(--_s, 0s));
+}
+
+.sports_buttons>div:hover {
+    --_p: 100%;
+    --_s: .3s;
+}
+
+
+/**Partie supérieure **/
+
+.sports_buttons {
+    display: grid;
+    width: 100%;
+    height: 10%;
+    grid-template-areas:
+        "a b c"
+        "d e f"
+        "g h i"
+        "j k l";
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    gap: 10px;
+    padding-inline: 30%;
+    padding-top: var(--padding_between_blocks);
+}
+
+a {
+    color: var(--font_color);
+    text-decoration: none;
+    font-family: var(--paragraph-font);
+    font-size: var(--paragraph-size);
+}
+
+.icon_buttons>a>img {
+    object-fit: scale-down;
+    width: 75px;
+    height: 75px;
+}
+
+/** Partie supérieure - Placement des icones et textes associés **/
+
+#sports_boxe {
+    grid-area: d;
+}
+
+#icon_sports_boxe {
+    grid-area: a;
+}
+
+#sports_cardio {
+    grid-area: e;
+}
+
+#icon_sports_cardio {
+    grid-area: b;
+}
+
+#sports_musculation {
+    grid-area: f;
+}
+
+#icon_sports_musculation {
+    grid-area: c;
+}
+
+#sports_yoga {
+    grid-area: j;
+}
+
+#icon_sports_yoga {
+    grid-area: g;
+}
+
+#sports_aquagym {
+    grid-area: k;
+}
+
+#icon_sports_aquagym {
+    grid-area: h;
+}
+
+#sports_aquabike {
+    grid-area: l;
+}
+
+#icon_sports_aquabike {
+    grid-area: i;
+}
+
+
+/** Partie inférieure **/
+h1 {
+    font-size: var(--title2-size);
+}
+
+p {
+    font-size: var(--paragraph-size);
+}
+
+.card_boxe,
+.card_cardio,
+.card_musculation,
+.card_yoga,
+.card_aquagym,
+.card_aquabike {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-areas:
+        "a a b"
+        "c . b"
+        "d . b"
+        "e f b";
+    gap: 25px;
+    padding-inline: 15%;
+    padding-top: var(--padding_between_blocks);
+    position: absolute;
+    overflow: hidden;
+    transition: all 1000ms cubic-bezier(.12, .6, .41, 1.10);
+    transition-timing-function: cubic-bezier(.12, .6, .41, 1.10);
+}
+
+#sports_illu>img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+
+}
+
+#sports_diff>img {
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+}
+
+#coach_button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+#coach_button>a {
+    box-sizing: border-box;
+    background-color: var(--secondary_color);
+    justify-content: center;
+    padding-block: 10px;
+    padding-inline: 30px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    white-space: nowrap;
+    font-size: var(--paragraph-size);
+}
+
+
+
+/** Partie inférieure - Placement des items **/
+
+#sports_title {
+    grid-area: a;
+    font-family: var(--main-font);
+}
+
+#sports_paragraph {
+    grid-area: c;
+    font-family: var(--paragraph-font);
+}
+
+#sports_diff {
+    grid-area: e;
+}
+
+#sports_price {
+    grid-area: d;
+    font-family: var(--paragraph-font);
+}
+
+#sports_illu {
+    grid-area: b;
+}
+
+#coach_button {
+    grid-area: f;
+}
+
+
+/** Responsive **/
+
+@media screen and (max-width: 1023px) {
+
+    .sports_buttons {
+        padding-inline: 15%;
+    }
+
+    #coach_button>a {
+        position: initial;
+    }
+
+    #coach_button {
+        padding-bottom: 25px;
+    }
+
+
+    .card_boxe,
+    .card_cardio,
+    .card_musculation,
+    .card_yoga,
+    .card_aquagym,
+    .card_aquabike {
+        display: grid;
+        width: auto;
+        height: auto;
+        grid-template-areas:
+            "b"
+            "a"
+            "c"
+            "e"
+            "d"
+            "f";
+        gap: 10px;
+        padding-inline: 15%;
+        padding-top: 10px;
+        justify-items: center;
+        text-justify: center;
+        overflow: hidden;
+    }
+
+    #sports_paragraph {
+        text-align: center;
+    }
+
+    #sports_illu {
+        max-width: 300px;
+        max-height: 300px;
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:650px) {
+    .sports_buttons {
+        padding-inline: 10%;
+        padding-bottom: 25px;
+    }
+
+    .icon_buttons>a>img {
+        object-fit: scale-down;
+        width: 50px;
+        height: 50px;
+    }
+
+    #sports_diff>img {
+        object-fit: cover;
+        width: 30px;
+        height: 30px;
+    }
+
+    h1 {
+        font-size: 1em;
+    }
+
+    p,
+    a,
+    #coach_button>a {
+        font-size: 0.8em;
+    }
+}

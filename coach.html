@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="coach.css">
+    <link rel="stylesheet" href="global.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fontgstatic.com/" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Nunito+Sans:opsz,wght@6..12,300&display=swap"
+        rel="stylesheet">
+    <script src="activitiesCardGeneration.js"></script>
+    <script src="onecoach.js"></script>
+    <script src="form.js"></script>
+    <script src="menuBurger.js" defer> </script>
+</head>
+
+<body onload="init()">
+    <header>
+        <div id="mySidenav" class="sidenav">
+            <a id="closeBtn" href="#" class="close">×</a>
+            <ul>
+                <li><a href="homePage.html">Nos salles</a></li>
+                <li><a href="activities2.html">Nos sports</a></li>
+                <li><a href="coach.html">Nos coach</a></li>
+                <li><a href="form.html">Réserver</a></li>
+            </ul>
+        </div>
+
+        <a href="#" id="openBtn">
+            <span class="burger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </a>
+        <div>
+            <a href="homePage.html">
+                <img class="logoGymStudio" alt="logoGymStudio" src="images/logoGymStudio.png">
+            </a>
+        </div>
+    </header>
+
+    <section id="allcoach">
+        <div id="iconsports">
+            <div id="picboxe2"><a><img src="images/picBoxe.PNG" alt="picboxe" id="picboxe" data-section="box"></a>
+            </div>
+            <div id="piccardio2"><a><img src="images/picCardio.PNG" alt="piccardio" data-section="cardio"
+                        id="piccardio"></a></div>
+            <div id="picmuscu2"><a><img src="images/picMuscu.PNG" alt="picmuscu" data-section="musculation"
+                        id="picmuscu"></a></div>
+            <div id="picyoga2"><a><img src="images/picYoga.png" alt="picyoga" id="picyoga" data-section="yoga"></a>
+            </div>
+            <div id="picaquabike2"><a><img src="images/picAquabike.png" alt="picaquabike" data-section="aquabike"
+                        id="picaquabike"></a>
+            </div>
+            <div id="picaquagym2"><a><img src="images/picAquagym.png" alt="picaquagym" data-section="aquagym"
+                        id="picaquagym"></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="global" data-active="box">
+
+        <div id="aquagym" class="card_aquagym disappear">
+            <h1>NOTRE COACH AQUAGYM</h1>
+            <div class="coach">
+                <div class="photo">
+                    <img src="images/coachAquaGym.webp" alt="c-aquagym">
+                </div>
+                <div class="text">
+                    <h2>Inès, 33 ans</h2>
+                    <p>"Le sport développe la molécule du plaisir."
+                        <br>
+                        Une séance cardio dans l'eau pour tonifier votre corps avec Inès.
+                    </p>
+
+                </div>
+                <div id="button_aquagym">
+                    <a href="form.html" class="buttonCoach2" data-button="ines">Réserver avec Inès</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="aquabike" class="card_aquabike disappear">
+            <h1>NOTRE COACH AQUABIKE</h1>
+            <div class="coach">
+                <div class="photo">
+                    <img src="images/coachAquaBike.jpg" alt="c-aquabike">
+                </div>
+                <div class="text">
+                    <h2>Léa, 31 ans</h2>
+                    <p>"Le succès c'est la combinaison de petits efforts, répétés chaque jour."
+                        <br>
+                        Profiter des bienfaits des sports d'eau.
+                    </p>
+                </div>
+                <div id="button_aquabike"><a href="form.html" class="buttonCoach2" data-button="lea">Réserver avec
+                        Léa</a></div>
+            </div>
+
+        </div>
+
+        <div id="yoga" class="card_yoga disappear">
+            <h1>NOTRE COACH YOGA</h1>
+            <div class="coach">
+                <div class="photo">
+                    <img src="images/coachYoga.jpg" alt="c-aquagym">
+                </div>
+                <div class="text">
+                    <h2>Clémence, 36 ans</h2>
+                    <p>“SAT NAM, WAHE GURU
+                        Sat Nam : Je laisse vibrer, rayonner mon Essence dans mon quotidien. GU RU : Je passe de l'ombre
+                        à
+                        la lumière."
+                        <br>
+                        Venez allier force et souplesse avec Clémence pour vous reconnecter à vous même.
+                    </p>
+                </div>
+                <div id="button_yoga"><a href="form.html" class="buttonCoach2" data-button="clemence">Réserver avec
+                        Clémence</a></div>
+            </div>
+        </div>
+
+        <div id="box" class="card_box disappear">
+            <h1>NOS COACH BOXE</h1>
+            <div class="coachboxe ">
+
+                <div class="coach1">
+                    <div class="photo1">
+                        <img src="images/coachBoxOneForm.png" alt="c-boxe1">
+                    </div>
+                    <div class="text1">
+                        <h2>Bob, 34 ans</h2>
+                        <p>"Si tu veux me faire accomplir quelque chose, dis moi que je ne peux pas y arriver"
+                            <br>
+                            Un coach musclé lors d'une séance pour se dépasser.
+                        </p>
+                    </div>
+                    <div id="button1_boxe"><a href="form.html" class="buttonCoach2" data-button="bob">Réserver avec
+                            Bob</a></div>
+                </div>
+
+
+                <div class="coach2">
+                    <div class="photo2">
+                        <img src="images/coachBoxTwoForm.jpg" alt="c-boxe2">
+                    </div>
+                    <div class="text2">
+                        <h2>Laura, 25 ans</h2>
+                        <p>"Je ne perds jamais. Sois je gagne, sois j'apprends."
+                            <br>
+                            Nouvelle coach qui a rejoint nos équipes en début d'année, elle vous fera transpirer.
+                        </p>
+                    </div>
+                    <div id="button2_boxe"><a href="form.html" class="buttonCoach2" data-button="laura">Réserver avec
+                            Laura</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="musculation" class="card_musculation disappear">
+            <h1>NOS COACH MUSCULATION</h1>
+            <div class="coachmuscu">
+                <div class="coach1">
+                    <div class="photo1">
+                        <img src="images/coachMusculationTwoForm.jpg" alt="c-muscu1">
+                    </div>
+                    <div class="text1">
+                        <h2>Anais, 30 ans</h2>
+                        <p>"Le sport est une évasion complète de la vie."
+                            <br>
+                            Anais vous accompagne dans ses séances bien musclées.
+                        </p>
+                    </div>
+                    <div id="button1_muscu"><a href="form.html" class="buttonCoach2" data-button="anais">Réserver avec
+                            Anais</a></div>
+                </div>
+
+                <div class="coach2">
+                    <div class="photo2">
+                        <img src="images/coachMusculationForm.jpg" alt="c-muscu2">
+                    </div>
+                    <div class="text2">
+                        <h2>Thomas, 31 ans</h2>
+                        <p>"Le sport est le dépassement de soi. C'est l'école de la vie"
+                            <br>
+                            Venez tonifier et sculpter votre corps avec Thomas.
+                        </p>
+                    </div>
+                    <div id="button2_muscu"><a href="form.html" class="buttonCoach2" data-button="thomas">Réserver avec
+                            Thomas</a></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="cardio" class="card_cardio disappear">
+            <h1>NOS COACH CARDIO</h1>
+
+            <div class="coachcardio">
+                <div class="coach1">
+                    <div class="photo1">
+                        <img src="images/coachCardioForm.jpg" alt="c-cardio1">
+                    </div>
+                    <div class="text1">
+                        <h2>Arthur, 25 ans</h2>
+                        <p>"Votre corps peut presque tout supporter. C'est votre esprit que vous devez convaincre."
+                            <br>
+                            Vener vous dépenser avec notre dynamique Arthur.
+                        </p>
+                    </div>
+                    <div id="button1_cardio"><a href="form.html" class="buttonCoach2" data-button="arthur">Réserver
+                            avec Arthur</a></div>
+                </div>
+
+                <div class="coach2">
+                    <div class="photo2">
+                        <img src="images/coachCardioTwoForm.jpg" alt="c-muscu2">
+                    </div>
+                    <div class="text2">
+                        <h2>Luc, 29 ans</h2>
+                        <p>"Il n'y a pas de fatigue qui soit!"
+                            <br>
+                            Brûler vos calories au rythme de Luc et de son sifflet.
+                        </p>
+                    </div>
+                    <div id="button2_cardio"><a href="form.html" class="buttonCoach2" data-button="luc">Réserver
+                            avec Luc</a></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="footercapsule" style="color:azure"></div>
+    <footer id="footerCoachPage">
+        <p>&copy; <img class="logoGymStudio" src="images/logoGymStudio.png" alt="logoGymStudio"> </p>
+        <p>Retrouvez-nous sur les réseaux sociaux : <img class="logoX" src="images/logoX.png" alt="logoX"> <img class="logoInsta"
+                src="images/logoInsta.png" alt="logoInsta"></p>
+    </footer> 
+
+</body>
+
+</html>

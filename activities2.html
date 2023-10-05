@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="Activities-style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities 2</title>
+</head>
+
+<body>
+    <header>
+        <div id="mySidenav" class="sidenav">
+            <a id="closeBtn" href="#" class="close">×</a>
+            <ul>
+                <li><a href="homePage.html">Nos salles</a></li>
+                <li><a href="activities2.html">Nos sports</a></li>
+                <li><a href="coach.html">Nos coach</a></li>
+                <li><a href="form.html">Réserver</a></li>
+            </ul>
+        </div>
+
+        <a href="#" id="openBtn">
+            <span class="burger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </a>
+        
+        <div>
+            <a href="homePage.html">
+                <img class="logoGymStudio" src="images/logoGymStudio.png" alt="logo GymStudio">
+            </a>
+        </div>
+
+    </header>
+
+    <section class="sports_buttons">
+
+        <div id="boxPicto" data-section="box">
+            <div class="icon_buttons" id="icon_sports_boxe">
+                <a href="#">
+                    <img src="images/picBoxe.PNG" alt="icone_boxe" id="LA BOXE" class="choiceSport">
+                </a>
+            </div>
+            <div class="txt_buttons" id="sports_boxe" class="choiceSport">
+                <a href="#"  class="choiceSport">Boxe</a>
+            </div>
+        </div>
+
+        <div id="cardioPicto" data-section="cardio">
+            <div class="icon_buttons" id="icon_sports_cardio">
+                <a href="#">
+                    <img src="images/picCardio.PNG" alt="icone_cardio" id="LE CARDIO" class="choiceSport">
+                </a>
+            </div>
+            <div class="txt_buttons" id="sports_cardio" class="choiceSport">
+                <a href="#">Cardio</a>
+            </div>
+        </div>
+
+        <div id="musculationPicto" data-section="musculation">
+            <div class="icon_buttons" id="icon_sports_musculation">
+                <a href="#">
+                    <img src="images/picMuscu.PNG" alt="icone_musculation" class="choiceSport" id="LA MUSCULATION">
+                </a>
+            </div>
+            <div class="txt_buttons" id="sports_musculation">
+                <a href="#">Musculation</a>
+            </div>
+        </div>
+
+
+        <div id="yogaPicto" data-section="yoga">
+            <div class="icon_buttons" id="icon_sports_yoga">
+                <a href="#">
+                    <img src="images/picYoga.png" alt="icone_yoga" id="LE YOGA" class="choiceSport">
+                </a>
+            </div>
+            <div class="txt_buttons" id="sports_yoga">
+                <a href="#">Yoga</a>
+            </div>
+        </div>
+
+        <div id="aquagymPicto" data-section="aquagym">
+            <div class="icon_buttons" id="icon_sports_aquagym">
+                <a href="#">
+                    <img src="images/picAquagym.png" alt="icone_aquagym" id="L'AQUAGYM" class="choiceSport">
+                </a>
+            </div>
+            <div class="txt_buttons" id="sports_aquagym">
+                <a href="#">Aquagym</a>
+            </div>
+        </div>
+
+        <div id="aquabikePicto" data-section="aquabike">
+            <div class="icon_buttons" id="icon_sports_aquabike">
+                <a href="#">
+                    <img src="images/picAquaBike.png" alt="icone_aquabike" id="L'AQUABIKE" class="choiceSport">
+                </a>
+            </div>
+            <div class="txt_buttons" id="sports_aquabike">
+                <a href="#">Aquabike</a>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="sports_text">
+        <div class="cardActivityContainer" id="global" data-active="box" >
+
+        </div>
+    </section>
+
+    <div class="footercapsule" style="color:azure"></div>
+    <footer>
+
+        <p>&copy; <img class="logoGymStudio" src="images/logoGymStudio.png" alt="logogymstudio"> </p>
+        <p>Retrouvez-nous sur les réseaux sociaux : <img class="logoX" src="images/logoX.png" alt="logoX"> <img class="logoInsta"
+                src="images/logoInsta.png" alt="logoinsta"></p>
+    </footer> -->
+    <footer>
+        <div id="footerLeft">
+            <p>&copy;</p>
+            <img class="logoGymStudioFooter" src="images/logoGymStudio.png" alt="logoGymStudio">
+        </div>
+        <div id="footerRight">
+            <p>Retrouvez-nous sur les réseaux sociaux : </p>
+            <img class="logoX" src="images/logoX.png" alt="logoX"> 
+            <img class="logoInsta" src="images/logoInsta.png" alt="logoInsta">
+        </div>
+    </footer> 
+
+
+
+
+    <script src="menuBurger.js" defer> </script>
+    <script type="module" src="activitiesCardGeneration.js"></script>
+    <script src=onecoach.js></script>
+
+</body>
+
+</html>

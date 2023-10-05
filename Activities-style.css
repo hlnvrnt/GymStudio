@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* les variables de ce css ont été lié au variable de global ==> pour modifier, merci d'utiliser global.css */
+    --primary_color: var(--main-color);
+    --secondary_color: var(--secondary-color);
+    --font_color: var(--paragraph-color);
+    --title_font_size: ;
+    --txt_font_size: ;
+    --header_font_size: ;
+    --padding_between_blocks: 25px;
+}
+
+.cardActivityContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100vw;
+    min-height: 50vh;
+
+}
+
+.cardActivity {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-areas:
+        "a a b"
+        "c . b"
+        "d . b"
+        "e f b";
+    gap: 25px;
+    padding-inline: 15%;
+    padding-top: var(--padding_between_blocks);
+    overflow: hidden;
+    animation-duration: 1.5s;
+    animation-name: slidein;
+    /* transform: translate (-110%, 0%);
+    transition: all 1000ms cubic-bezier(.12, .6, .41, 1.10);
+    transition-timing-function: cubic-bezier(.12, .6, .41, 1.10);
+    transform: translate (0%, 0%); */
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 100%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+
+
+#sports_title {
+    grid-area: a;
+}
+
+#sports_paragraph {
+    grid-area: c;
+}
+
+#sports_diff {
+    grid-area: e;
+
+}
+
+#sports_price {
+    grid-area: d;
+}
+
+#sports_illu {
+    grid-area: b;
+}
+
+#coach_button {
+    grid-area: f;
+}
+
+
+
+#coach_button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+#coach_button :hover{
+    cursor: pointer;
+    background-color: #5c8374;
+    font-size : 20px;
+}
+
+#coach_button>a {
+    box-sizing: border-box;
+    background-color: var(--secondary_color);
+    justify-content: center;
+    padding-block: 10px;
+    padding-inline: 30px;
+    border-radius: 20px;
+    white-space: nowrap;
+    box-shadow: 4px 4px 12px #122a2b,
+             -4px -4px 12px #122a2b;
+             transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+#sports_illu>img {
+    object-fit:cover;
+    width: 100%;
+    /* height: 100%; */
+    border-radius: 20px;
+    filter :drop-shadow(13px 13px 10px rgb(19, 19, 19))
+
+}
+
+#sports_diff>img {
+    object-fit: cover;
+    height: 50px;
+}
+
+
+/**Partie supérieure **/
+
+.sports_buttons {
+    display: grid;
+    width: 100%;
+    height: 10%;
+    grid-template-areas:
+        "a b c"
+        "d e f"
+        "g h i"
+        "j k l";
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    gap: 10px;
+    padding-inline: 30%;
+    padding-top: var(--padding_between_blocks);
+}
+
+a {
+    color: var(--font_color);
+    text-decoration: none;
+    font-family: var(--paragraph-font);
+}
+
+.icon_buttons>a>img {
+    object-fit: scale-down;
+    width: 75px;
+    height: 75px;
+}
+
+/** Partie supérieure - Placement des icones et textes associés **/
+
+#sports_boxe {
+    grid-area: d;
+}
+
+#icon_sports_boxe {
+    grid-area: a;
+}
+
+#sports_cardio {
+    grid-area: e;
+}
+
+#icon_sports_cardio {
+    grid-area: b;
+}
+
+#sports_musculation {
+    grid-area: f;
+}
+
+#icon_sports_musculation {
+    grid-area: c;
+}
+
+#sports_yoga {
+    grid-area: j;
+}
+
+#icon_sports_yoga {
+    grid-area: g;
+}
+
+#sports_aquagym {
+    grid-area: k;
+}
+
+#icon_sports_aquagym {
+    grid-area: h;
+}
+
+#sports_aquabike {
+    grid-area: l;
+}
+
+#icon_sports_aquabike {
+    grid-area: i;
+}
+
+
+@media screen and (max-width: 1600px) {
+
+body {
+    overflow-y : initial;
+}
+
+#sports_illu>img {
+    object-fit:cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#sports_illu> {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+
+.cardActivity {
+    grid-template-areas:
+        "a a"
+        "b b"
+        "c c"
+        "d d"
+        "e f";
+}
+
+#sports_title {
+    grid-area: b;
+}
+
+#sports_paragraph {
+    grid-area: c;
+}
+
+#sports_diff {
+    grid-area: e;
+}
+
+#sports_price {
+    grid-area: d;
+}
+
+#sports_illu {
+    grid-area: a;
+}
+
+#coach_button {
+    grid-area: f;
+}
+
+
+#sports_diff>img {
+    object-fit: cover;
+    height: 50px;
+}
+}
+
+@media screen and (max-width: 900px) {
+    .sports_buttons { 
+        padding-inline: 0%;
+    } 
+}

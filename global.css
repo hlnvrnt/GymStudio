@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Les modifs de couleurs,.... appliqués ici s'applique à toutes les pages */
+
+    --main-color: #242328;
+    --secondary-color: #183d3d;
+    --third-color: #93b1a6;
+
+    --paragraph-color: white;
+    --title-color: white;
+
+    --main-font: 'Cormorant Garamond', serif;
+    --paragraph-font: 'Nunito Sans', sans-serif;
+    --title1-size: 2em;
+    --title2-size: 1.5em;
+    --paragraph-size: 1.3em;
+    ;
+}
+
+.footercapsule {
+    flex-grow:1;
+}
+
+body {
+    
+    min-height: 100vh;
+    position: relative;
+    background-color: var(--main-color);
+    color: var(--paragraph-color);
+    font-size: var(--paragraph-size);
+    display:flex;
+    flex-direction: column;
+}
+
+/* Sidenav menu */
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -250px;
+    background-color: var(--main-color);
+    padding-top: 60px;
+    transition: left 0.5s ease;
+}
+
+/* Sidenav menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: var(--title2-size);
+    color: var(--third-color);
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: var(--paragraph-color);
+}
+
+.sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Active class */
+.sidenav.active {
+    left: 0;
+}
+
+/* Close btn */
+.sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+/* Icône burger */
+.burger-icon span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+
+
+
+/* pour le footer :  */
+
+.logoX,
+.logoInsta {
+    width: 2vw;
+    object-fit: contain;
+}
+
+footer {
+    background-color: #183D3D;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 1% 0 1%;
+    margin-top: 2%;
+    color: var(--paragraph-color);
+    position: absolute; 
+    bottom: 0;
+    left: 0;
+    right:0;
+}
+
+#footerRight {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logoGymStudioFooter {
+    width: 3vw;
+    padding: 4px;
+    border-radius: 10px;
+}
+
+.logoX:hover,
+.logoInsta:hover {
+    cursor: pointer;
+}
+
+
+
+/* fin du css footer  */
+
+/* Pour le header */
+
+header {
+    background-color: #183d3d;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1% 0 1%;
+}
+
+#openBtn {
+    display: flex;
+    align-items: center;
+}
+
+/* fin du cssheader */
+
+/* mise en page du logo navbarre */
+
+.logoGymStudio {
+    width: 40px;
+    padding: 4px;
+    border-radius: 10px;
+}
+
+
+.sports_buttons>div,
+#iconsports>div {
+    --b: 0.1em;
+    /* the thickness of the line */
+    --c: white;
+    /* the color */
+    color: #0000;
+    padding-block: var(--b);
+    background:
+        linear-gradient(var(--c) 50%, #000 0) 0% calc(100% - var(--_p, 0%))/100% 200%,
+        linear-gradient(var(--c) 0 0) 0% var(--_p, 0%)/var(--_p, 0%) var(--b) no-repeat;
+    -webkit-background-clip: text, padding-box;
+    background-clip: text, padding-box;
+    /* transition: .3s var(--_s, 0s) linear, background-size .3s calc(.3s - var(--_s, 0s)); */
+}
+
+.sports_buttons>div:hover,
+#iconsports>div:hover {
+    --_p: 100%;
+    /* --_s: .3s; */
+    transform: scale(1.2);            
+}
+
+
+
+
+@media screen and (max-width: 410px) {
+
+    /* mise en page footer */
+
+    .logoX,
+    .logoInsta {
+        width: 1vw;
+    }
+
+    .logoGymStudio {
+        width: 2vw;
+    }
+
+    /* Taille de police */
+
+    :root {
+        --title1-size: 2.2em;
+        --title2-size: 1.8em;
+        --paragraph-size: 1.2em;
+    }
+}

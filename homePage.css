@@ -1,0 +1,241 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: var(--main-color);
+    /* overflow: hidden; */
+    height: 100vh;
+    display: flex;
+}
+
+#hero div {
+    width: 100vw;
+    height: 40vh;
+    overflow: hidden;
+    border-bottom: solid white 2px;
+}
+
+#hero div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#hero {
+    background-color: var(--main-color);
+    position: relative;
+}
+
+.logo {
+    width: 40px;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    border-radius: 10px;
+}
+
+#openBtn {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+}
+
+#ourSpaces {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    position: absolute;
+    top: 40%;
+    left: 42%;
+    transform: translate(-50%, -50%);
+    color: var(--paragraph-color);
+    font-family: var(--main-font);
+    font-size: 2.5em;
+}
+
+h2 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--paragraph-color);
+    font-family: var(--main-font);
+    font-size: var(--title1-size);
+}
+
+h3 {
+    font-family: var(--main-font);
+    font-size: var(--title2-size);
+}
+
+p {
+    font-family: var(--paragraph-font);
+    font-size: var(--paragraph-font);
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    text-align: center;
+    gap: 10px;
+}
+
+#container1,
+#container2,
+#container3 {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.flex-container div p {
+    width: 24vw;
+    /* height: 20%; */
+    background-color: var(--secondary-color);
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color);
+    border-radius: 0% 0% 25% 10%;
+    padding: .5rem;
+}
+
+.flex-container div h3 {
+    width: 24vw;
+    /* height: 30%; */
+    background-color: var(--secondary-color);
+    color: var(--paragraph-color);
+    font-family: var(--paragraph-font);
+    border-radius: 25% 10% 0% 0%;
+    padding: .5rem;
+}
+
+.flex-container div img {
+    border-radius: 25% 10%;
+    width: 22vw;
+    margin-top: -2em;
+    margin-bottom: 0.5em;
+    /** box-shadow: 4px 1px 1px #93b1a6; **/
+}
+
+
+button {
+    color: var(--paragraph-color);
+    background-color: var(--secondary-color);
+    font-family: var(--paragraph-font);
+    font-size: 1em;
+    padding: .5rem 1rem;
+    border-radius: 10px;
+}
+
+.button {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2%;
+}
+
+.button :hover{
+    cursor: pointer;
+    background-color: #5c8374;
+    font-size : 20px;
+}
+
+@media screen and (max-width: 768px) {
+
+
+    h3{
+        font-size: var(--paragraph-size);
+    }
+
+    p{
+        font-size: 0.8em;
+    }
+
+
+    .button {
+        position: initial;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    button {
+        width: 80vw;
+        font-weight: bold;
+    }
+
+    #ourSpaces {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2.5rem;
+    }
+
+
+    #container1,
+    #container2,
+    #container3 {
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2em;
+    }
+
+    .flex-container div img {
+        width: 75vw;
+
+    }
+
+    .flex-container div p {
+        width: 76vw;
+        /* font-size: 0.8em; */
+    }
+
+    .flex-container div h3 {
+        width: 76vw;
+    }
+
+}
+
+@media screen and (max-width: 433px) {
+
+
+    h1 {
+        position: absolute;
+        top: 40%;
+        left: 42%;
+        transform: translate(-50%, -50%);
+        color: var(--paragraph-color);
+        font-family: var(--main-font);
+        /* font-size: 1rem; */
+    }
+
+    h2 {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: var(--paragraph-color);
+        font-family: var(--main-font);
+        /* font-size: 1rem; */
+    }
+
+    body {
+        overflow: auto;
+    }
+
+}
