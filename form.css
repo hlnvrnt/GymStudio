@@ -94,7 +94,7 @@ h2 {
 }
 
 button {
-    border-radius: 30px;
+    border-radius: 20px;
     background-color: #183D3D;
     width: auto;
     /* box-shadow: 2px 4px black; */
@@ -103,6 +103,9 @@ button {
     margin-top: 2%;
     font-size: 0.8em;
     font-family: var(--paragraph-font);
+    box-shadow: 4px 4px 12px #122a2b,
+    -4px -4px 12px #122a2b;
+    transition: all 0.3s ease 0s;
 }
 
 button:hover {
@@ -124,6 +127,7 @@ button:hover {
 .planTram {
     width: 25vw;
     height: 35vh;
+    border-radius: 20px;
 }
 
 .logoTram {
