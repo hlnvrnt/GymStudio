@@ -7,7 +7,7 @@
 
 body {
     background-color: #242328;
-   overflow: auto;
+    overflow: auto;
 }
 
 
@@ -99,24 +99,25 @@ div .coach1 {
     width: 100%;
     height: 100%;
     border-radius: 10%;
-    filter :drop-shadow(13px 13px 10px rgb(19, 19, 19))
+    filter: drop-shadow(13px 13px 10px rgb(19, 19, 19))
 }
 
 /* Nos css qui servent à faire apparaitre et dissparaitre nos articles ou coachs  */
 /* On les "caches" en les décalants */
 
 .appear {
-    position:relative;
+    position: relative;
     animation-duration: 1.5s;
     animation-name: slidein;
-    display:initial;
+    display: initial;
 }
 
 .disappear {
     animation-duration: 1.5s;
     animation-name: slideout;
-    display:none;    /* ==> gérer via js pour délay */
-    
+    display: none;
+    /* ==> gérer via js pour délay */
+
 }
 
 
@@ -159,15 +160,15 @@ div .coach2 {
     align-items: center;
     justify-items: center;
 }
-    
- 
+
+
 
 .photo2 img {
     object-fit: cover;
     width: 100%;
     height: 100%;
     border-radius: 10%;
-    filter :drop-shadow(13px 13px 10px rgb(19, 19, 19))
+    filter: drop-shadow(13px 13px 10px rgb(19, 19, 19))
 }
 
 #button1_cardio a,
@@ -185,47 +186,47 @@ div .coach2 {
     font-family: var(--paragraph-font);
     text-decoration: none;
     box-shadow: 4px 4px 12px #122a2b,
-             -4px -4px 12px #122a2b;
-             transition: all 0.3s ease 0s;
-  cursor: pointer;
-  outline: none;
+        -4px -4px 12px #122a2b;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
 }
 
 
-#button1_cardio :hover{
+#button1_cardio :hover {
     cursor: pointer;
     background-color: #5c8374;
-    font-size : 20px;
+    font-size: 20px;
 }
 
-#button2_cardio :hover{
+#button2_cardio :hover {
     cursor: pointer;
-    background-color:#5c8374;
-    font-size : 20px;
+    background-color: #5c8374;
+    font-size: 20px;
 }
 
 #button1_boxe :hover {
     cursor: pointer;
     background-color: #5c8374;
-    font-size : 20px;
+    font-size: 20px;
 }
 
-#button2_boxe :hover{
+#button2_boxe :hover {
     cursor: pointer;
-    background-color:#5c8374;
-    font-size : 20px;
+    background-color: #5c8374;
+    font-size: 20px;
 }
 
-#button1_muscu :hover{
- cursor: pointer;
-    background-color:#5c8374;
-    font-size : 20px;
+#button1_muscu :hover {
+    cursor: pointer;
+    background-color: #5c8374;
+    font-size: 20px;
 }
 
 #button2_muscu :hover {
     cursor: pointer;
     background-color: #5c8374;
-    font-size : 20px;
+    font-size: 20px;
 }
 
 
@@ -302,7 +303,7 @@ div .coach {
 }
 
 .photo {
-    filter :drop-shadow(13px 13px 10px rgb(19, 19, 19))
+    filter: drop-shadow(13px 13px 10px rgb(19, 19, 19))
 }
 
 .text {
@@ -321,30 +322,30 @@ div .coach {
 
 #button_aquagym a,
 #button_aquabike a,
-#button_yoga a{
-box-shadow: 4px 4px 12px #122a2b,
-             -4px -4px 12px #122a2b;
-             transition: all 0.3s ease 0s;
-  cursor: pointer;
-  outline: none;
+#button_yoga a {
+    box-shadow: 4px 4px 12px #122a2b,
+        -4px -4px 12px #122a2b;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
 }
 
-#button_aquagym :hover{
+#button_aquagym :hover {
     cursor: pointer;
     background-color: #5c8374;
-    font-size : 28px;
+    font-size: 28px;
 }
 
-#button_aquabike :hover{
+#button_aquabike :hover {
     cursor: pointer;
     background-color: #5c8374;
-    font-size : 28px;
+    font-size: 28px;
 }
 
-#button_yoga :hover{
+#button_yoga :hover {
     cursor: pointer;
     background-color: #5c8374;
-    font-size : 28px;
+    font-size: 28px;
 }
 
 
@@ -426,16 +427,16 @@ box-shadow: 4px 4px 12px #122a2b,
     }
 
     .card_box,
-.card_musculation,
-.card_cardio,
-.card_aquabike,
-.card_aquagym,
-.card_yoga {
-    width: 100%;
-    margin-bottom: 5%;
-    height: 80vh;
+    .card_musculation,
+    .card_cardio,
+    .card_aquabike,
+    .card_aquagym,
+    .card_yoga {
+        width: 100%;
+        margin-bottom: 5%;
+        height: 80vh;
 
-}
+    }
 
 
     div .coach {
@@ -444,7 +445,7 @@ box-shadow: 4px 4px 12px #122a2b,
         gap: 0;
         padding-top: 0.5em;
     }
-    
+
 
     div .photo {
         width: 100%;
@@ -576,5 +577,4 @@ box-shadow: 4px 4px 12px #122a2b,
     .photo2 {
         align-items: start;
     }
-
 }
