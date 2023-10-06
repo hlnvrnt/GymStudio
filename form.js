@@ -97,11 +97,22 @@ function confirmSend() {
     el.style.visibility = el.style.visibility == "visible" ? "hidden" : "visible";
 }
 
-
-
 // Lien entre page coach et formulaire
 
 // // Arrivée sur le formulaire pour choix du coach
+
+const tab2 = document.querySelector(".buttonCoach2");
+for (let k=0; k<tab.length; k++){
+    tab.addEventListener("click", functionFromCoach);
+}
+
+function functionFromCoach(e) {
+
+    const result = e.target.dataset.button;
+
+    localStorage.setItem("sport2", result2)
+}
+
 
 function init2() {
 

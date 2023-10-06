@@ -577,9 +577,4 @@ box-shadow: 4px 4px 12px #122a2b,
         align-items: start;
     }
 
-    /* mise en page footer */
-
-    #footerCoachPage {
-        margin-top: initial;
-    }
 }
