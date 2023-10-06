@@ -131,7 +131,10 @@ button {
     font-family: var(--paragraph-font);
     font-size: 1em;
     padding: .5rem 1rem;
-    border-radius: 10px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 12px #122a2b,
+             -4px -4px 12px #122a2b;
+             transition: all 0.3s ease 0s;
 }
 
 .button {
@@ -144,6 +147,7 @@ button {
     cursor: pointer;
     background-color: #5c8374;
     font-size : 20px;
+    border-radius: 20px;
 }
 
 @media screen and (max-width: 768px) {
