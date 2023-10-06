@@ -30,6 +30,7 @@ body {
 #picboxe {
     height: 75px;
     width: 75px;
+    object-fit: scale-down;
 }
 
 .card_cardio,
