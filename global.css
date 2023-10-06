@@ -134,6 +134,18 @@ footer {
     justify-content: space-between;
     gap: 5px;
 }
+/*todo ligne 137 - 147*/
+
+#footerLeft {
+    display: flex;
+    justify-content: space-between; 
+    gap: 5px;
+}
+
+#footerLeft > p {
+    display: flex;
+    align-items: center;
+}
 
 .logoGymStudioFooter {
     width: 3vw;
@@ -225,5 +237,11 @@ header {
         --title1-size: 2.2em;
         --title2-size: 1.8em;
         --paragraph-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #footerRight > p {
+        display: none;
     }
 }

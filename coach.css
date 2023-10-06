@@ -247,6 +247,7 @@ div .coach2 {
 #button1_muscu,
 #button1_boxe {
     grid-area: c;
+    min-height: 40px;
 }
 
 .photo2 {
