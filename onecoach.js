@@ -127,7 +127,7 @@ function functionFromCoach(e) {
     localStorage.setItem("sport2", result2);
 }
 
-console.log(result2)
+// console.log(result2)
 
 
 

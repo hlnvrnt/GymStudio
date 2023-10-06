@@ -576,10 +576,4 @@ box-shadow: 4px 4px 12px #122a2b,
     .photo2 {
         align-items: start;
     }
-
-    /* mise en page footer */
-
-    #footerCoachPage {
-        margin-top: initial;
-    }
 }
