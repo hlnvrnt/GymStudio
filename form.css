@@ -104,7 +104,7 @@ button {
     font-size: 0.8em;
     font-family: var(--paragraph-font);
     box-shadow: 4px 4px 12px #122a2b,
-    -4px -4px 12px #122a2b;
+        -4px -4px 12px #122a2b;
     transition: all 0.3s ease 0s;
 }
 
@@ -157,7 +157,7 @@ input {
 }
 
 #example div {
-    width: 20%;
+    width: 35%;
     height: 25%;
     margin: 100px auto;
     background-color: var(--secondary-color);
@@ -206,6 +206,12 @@ input {
     #sportCoachPic {
         justify-content: space-around;
     }
+
+    #example div {
+        height: 30%;
+        width: 50%;
+
+    }
 }
 
 @media screen and (max-width: 920px) {
@@ -222,6 +228,12 @@ input {
 
     #CommentClient {
         width: 100%;
+    }
+
+    #example div {
+        height: 30%;
+        width: 50%;
+
     }
 }
 
@@ -244,16 +256,14 @@ input {
         justify-content: space-around;
     }
 
+    #example div {
+        height: 30%;
+        width: 60%;
+
+    }
 }
 
 @media screen and (max-width: 581px) {
-
-    /* h1,
-    h2 {
-
-         font-size: 2rem; 
-
-    } */
 
     #sportCoachPic {
         justify-content: space-around;
@@ -271,4 +281,11 @@ input {
     .planTram {
         width: 70vw;
     }
+
+    #example div {
+        height: 50%;
+        width: 50%;
+
+    }
+
 }
