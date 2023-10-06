@@ -67,7 +67,7 @@ const listingActivities = [
         desc: "Le yoga est une pratique qui nous vient de l'Inde et qui apporte un équilibre entre le corps, le mental et le spirituel.Le yoga permet d'améliorer sa force, sa souplesse et son équilibre en reforçant les muscles profonds. Lorsqu'il est pratiqué régulièrment il permet d'améliorer sa santé et sa vitalité.",
         price1: "30 €",
         price2: "250 €",
-        difficulty: "images/haltereDiff.png",
+        difficulty: "images/haltereDiff.PNG",
         activityImg: "images/activtyYoga.jpg",
         link: "coach.html",
         data: "yoga"
@@ -77,7 +77,7 @@ const listingActivities = [
         desc: "L'aquagym est une forme de gymnastique pratiquée dans l'eau. Les exercices sont effectués dans l'eau, dont la hauteur est choisie en fonction des exercices à pratiquer et de la résistance souhaitée. La pression de l'eau évite les chocs et minimise le risque de courbartures, de claquages ou d'élongations musculaires.",
         price1: "30€",
         price2: "250€",
-        difficulty: "images/haltereDiff.png",
+        difficulty: "images/haltereDiff.PNG",
         activityImg: "images/activity_AquaGym.jpg",
         link: "coach.html",
         data: "aquagym"
@@ -87,7 +87,7 @@ const listingActivities = [
         desc: "L'aquabike est pratiqué en piscine. Cela consiste à pédaler dans l'eau sur un vélo sans roue.En plus d'être une activité faisant travailler le cœur et brûlant les calories et les graisses en priorité, le fait de pratiquer dans l'eau permet de travailler en douceur.",
         price1: "50€",
         price2: "450€",
-        difficulty: "images/haltereDiff.png",
+        difficulty: "images/haltereDiff.PNG",
         activityImg: "images/activityAquaBike.jpg",
         link: "coach.html",
         data: "aquabike"
