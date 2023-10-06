@@ -24,6 +24,7 @@
 
 .footercapsule {
     flex-grow:1;
+    opacity: 0;
 }
 
 body {
@@ -101,6 +102,7 @@ body {
 .logoInsta {
     width: 2vw;
     object-fit: contain;
+    min-width: 25px;
 }
 
 footer {
@@ -112,7 +114,6 @@ footer {
     padding: 0 1% 0 1%;
     margin-top: 2%;
     color: var(--paragraph-color);
-    position: absolute; 
     bottom: 0;
     left: 0;
     right:0;
@@ -121,12 +122,25 @@ footer {
 #footerRight {
     display: flex;
     justify-content: space-between;
+    gap: 5px;
+}
+
+#footerLeft {
+    display: flex;
+    justify-content: space-between; 
+    gap: 5px;
+}
+
+#footerLeft > p {
+    display: flex;
+    align-items: center;
 }
 
 .logoGymStudioFooter {
     width: 3vw;
     padding: 4px;
     border-radius: 10px;
+    min-width: 35px;
 }
 
 .logoX:hover,
@@ -187,20 +201,18 @@ header {
 }
 
 
-
-
 @media screen and (max-width: 410px) {
 
     /* mise en page footer */
 
-    .logoX,
+    /* .logoX,
     .logoInsta {
         width: 1vw;
     }
 
     .logoGymStudio {
         width: 2vw;
-    }
+    } */
 
     /* Taille de police */
 
@@ -208,5 +220,11 @@ header {
         --title1-size: 2.2em;
         --title2-size: 1.8em;
         --paragraph-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #footerRight > p {
+        display: none;
     }
 }
