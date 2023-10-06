@@ -48,7 +48,7 @@ const listingActivities = [
         price1: "30 €",
         price2: "250 €",
         difficulty: "images/haltereDiff3.PNG",
-        activityImg: "images/activityCardio.webp",
+        activityImg: "images/activityCardio.jpg",
         link: "coach.html",
         data: "cardio"
     },
