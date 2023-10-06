@@ -295,3 +295,18 @@ a {
         padding-inline: 0%;
     }
 }
+
+@media screen and (max-width: 500px) {
+    #sports_title{
+        font-size: 1em;
+    }
+    #sports_paragraph{
+        font-size: 0.8em;
+    }
+    #sports_price{
+        font-size: 0.8em;
+    }
+    #coach_button {
+        font-size: 0.8em;
+    }
+}
