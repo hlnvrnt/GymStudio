@@ -212,7 +212,9 @@ button {
     .flex-container div h3 {
         width: 76vw;
     }
-
+h1 {
+font-size: 1rem;
+}
 }
 
 @media screen and (max-width: 433px) {
@@ -225,7 +227,7 @@ button {
         transform: translate(-50%, -50%);
         color: var(--paragraph-color);
         font-family: var(--main-font);
-        /* font-size: 1rem; */
+     
     }
 
     h2 {
