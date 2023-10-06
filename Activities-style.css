@@ -212,17 +212,14 @@ a {
 
 #sports_paragraph {
     font-family: var(--paragraph-font);
-    font-size: var(--paragraph-size);
 }
 
 #sports_title {
     font-family: var(--main-font);
-    font-size: var(--title2-size);
 }
 
 #sports_price {
     font-family: var(--paragraph-font);
-    font-size: var(--paragraph-size);
 }
 
 
