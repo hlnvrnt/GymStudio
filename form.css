@@ -104,14 +104,14 @@ button {
     font-size: 0.8em;
     font-family: var(--paragraph-font);
     box-shadow: 4px 4px 12px #122a2b,
-             -4px -4px 12px #122a2b;
-             transition: all 0.3s ease 0s;
+    -4px -4px 12px #122a2b;
+    transition: all 0.3s ease 0s;
 }
 
 button:hover {
-        cursor: pointer;
-        background-color: #5c8374;
-        font-size : 17px;
+    cursor: pointer;
+    background-color: #5c8374;
+    font-size: 17px;
 }
 
 #localisation {
@@ -196,8 +196,10 @@ input {
     }
 
     .logoTram
+
     /*.logoX,
-    .logoInsta*/ {
+    .logoInsta*/
+        {
         width: 3vw;
     }
 
@@ -209,9 +211,9 @@ input {
 @media screen and (max-width: 920px) {
 
     /*#infoClients {*/
-        /* justify-content: center; */
-        /* align-content: center; */
-   /* }*/
+    /* justify-content: center; */
+    /* align-content: center; */
+    /* }*/
 
 
     #availableClient {
@@ -236,11 +238,7 @@ input {
         width: 50vw;
     }
 
-    .logoTram/*,
-    .logoX,
-    .logoInsta*/ {
-        width: 3vw;
-    }
+    .logoTram
 
     #sportCoachPic {
         justify-content: space-around;
@@ -261,9 +259,12 @@ input {
         justify-content: space-around;
     }
 
-    .logoTram/*
+    .logoTram
+
+    /*
     .logoX,
-    .logoInsta */{
+    .logoInsta */
+        {
         width: 4vw;
     }
 

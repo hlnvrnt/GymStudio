@@ -97,30 +97,3 @@ function confirmSend() {
     el.style.visibility = el.style.visibility == "visible" ? "hidden" : "visible";
 }
 
-
-
-// Lien entre page coach et formulaire
-
-// // Arrivée sur le formulaire pour choix du coach
-
-function init2() {
-
-    let coachOrigin = localStorage.getItem("sport2");
-    console.log(coachOrigin)
-
-    // for (let i = 0; i < selectedCoach.length; i++) {
-    //     if (coachOrigin === selectedCoach.dataset.select) {
-
-    //     }
-    // }
-
-
-    // function functionDisplayFromButtonCoach() {
-    //     document.getElementById(sportOrigin).classList.add("appear"); // on ajoute la classe appear à l'élément qui a été séléctionné pour le faire apparaitre
-    //     document.getElementById(sportOrigin).classList.remove("disappear"); // on nettoye son ancienne classe dissappear
-
-    //     document.getElementById("global").dataset.active = sportOrigin; // on associe que l'élément séléctionné devient aussi l'élément "précédent actif" pour le prochain move
-    //     // console.log(this.dataset.section);
-    // };
-
-}

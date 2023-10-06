@@ -28,13 +28,13 @@
 }
 
 body {
-    
+
     min-height: 100vh;
     position: relative;
     background-color: var(--main-color);
     color: var(--paragraph-color);
     font-size: var(--paragraph-size);
-    display:flex;
+    display: flex;
     flex-direction: column;
 }
 
@@ -113,10 +113,20 @@ footer {
     align-items: center;
     padding: 0 1% 0 1%;
     margin-top: 2%;
-    color: var(--paragraph-color);
+    color: var(--paragraph-color); 
     bottom: 0;
     left: 0;
     right:0;
+}
+
+#footerLeft>p {
+    display: flex;
+    align-items: center;
+}
+
+#footerLeft {
+    display: flex;
+    gap: 5px;
 }
 
 #footerRight {
@@ -124,6 +134,7 @@ footer {
     justify-content: space-between;
     gap: 5px;
 }
+/*todo ligne 137 - 147*/
 
 #footerLeft {
     display: flex;
@@ -197,9 +208,15 @@ header {
 #iconsports>div:hover {
     --_p: 100%;
     /* --_s: .3s; */
-    transform: scale(1.2);            
+    transform: scale(1.2);
 }
 
+
+@media screen and (max-width: 600px) {
+    #footerRight>p{
+        display: none;
+    }
+}
 
 @media screen and (max-width: 410px) {
 
